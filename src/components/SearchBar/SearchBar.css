@@ -15,11 +15,14 @@
   color: #262626;
 }
 .image-wrapper {
+  display: flex;
+  align-items: center;
   height: 50px;
 }
 
 .logo-image {
   height: 100%;
+  font-size: 100px;
 }
 
 .social-wrapper {
