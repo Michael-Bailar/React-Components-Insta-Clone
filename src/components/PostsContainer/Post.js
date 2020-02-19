@@ -12,6 +12,7 @@ import "./Posts.css";
 const Post = props => {
   // set up state for the likes
   const [likes, setLikes] = useState(props.post.likes);
+  const [timestamp] = useState(props.post.timestamp)
 
   const incrementLikes = () => {
     setLikes(likes => likes + 1);
@@ -23,8 +24,8 @@ const Post = props => {
       <div className="post-image-wrapper">
         <img alt="post thumbnail" className="post-image" src={props.post.imageUrl} />
       </div>
-      <LikeSection likes={likes} incrementLikes={incrementLikes}/>
-      <CommentSection postId={props.post.imageUrl} comments={props.post.comments} />
+      <LikeSection  likes={likes} incrementLikes={incrementLikes}/>
+      <CommentSection timestamp={timestamp} postId={props.post.imageUrl} comments={props.post.comments} />
     </div>
   );
 };
