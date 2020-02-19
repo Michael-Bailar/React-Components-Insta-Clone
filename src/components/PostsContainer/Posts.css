@@ -5,6 +5,7 @@
   margin: 5px auto;
 }
 .post-header{
+  margin-left: 10px;
   display: flex;
   align-items: center;
 }
@@ -50,7 +51,8 @@
   margin: 10px;
 }
 .like-number {
-  width: 100px;
+  text-align: left;
   margin: 15px 0px;
+  margin-left: 14px;
   font-size: 16px;
 }
